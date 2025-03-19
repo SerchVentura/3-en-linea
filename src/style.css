@@ -39,7 +39,7 @@ h3 {
 /* Estilo para los cuadros (squares) */
 .square {
   background: #fff;
-  border: 2px solid #0056b3;
+  border: 2px solid #000000;
   font-size: 2rem;
   font-weight: bold;
   color: black;
@@ -121,21 +121,27 @@ button.square:contains('O') {
 
 .game {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row; /* Cambiado de column a row */
+  align-items: flex-start; /* Alinear elementos al inicio verticalmente */
   background-color: #fff;
   border-radius: 8px;
   padding: 20px;
-  width: 300px;
+  width: auto; /* Ajustar el ancho automáticamente */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.game-board {
+  margin-right: 20px; /* Añadir espacio entre el tablero y los botones */
+}
+
 .game-info {
-  margin-top: 20px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Cambiado de row a column */
   gap: 10px;
-  align-items: center;
+  align-items: flex-start; /* Alinear elementos al inicio horizontalmente */
+  margin-top: 20px;
+  justify-content: center; /* Centrar horizontalmente */
+  margin-left: auto; /* Mover a la derecha */
 }
 
 .game-info ol {
