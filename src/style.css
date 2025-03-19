@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background: linear-gradient(to bottom, #0000ff, #00bfff);
+  background: linear-gradient(to bottom, #800080, #dda0dd); /* Cambiado a morado degradado */
   color: #333;
   display: flex;
   justify-content: center;
